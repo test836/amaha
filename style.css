@@ -12,6 +12,8 @@ body {
   width: 100%;
   height: 100vh;
   /*display: flex;*/
+  background: #c9e6ff;
+  font-family: "Lucida Console", Courier, monospace;
 }
 
 .container {
@@ -30,7 +32,8 @@ body {
   color: #ffffff;
   /*background-color: teal;
   background-color: #89d0dc;*/
-  background-color: #00c4cc;
+  /*background-color: #00c4cc;*/
+  background-color: #cc0000;
   padding: 0px;
 }
 
@@ -63,9 +66,37 @@ div.c-wrapper {
 }
 .test {
   padding: 20px;
-  max-width: 1700px;
-  margin: auto;
+  /*max-width: 1700px;
+  margin: auto;*/
+  margin-bottom: 20px;
+  padding: 30px 15px;
+  /*background: rgba(153, 228, 238, 0.9);*/
+  background: #92bde7;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
 }
+
+.fa {
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/*#elementID {  //used for font awesom font size
+  font-size: 2em;
+}*/
+
+.carousel,
+.slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(88, 88, 88);
+}
+
 /*
 .container {
   width: 100%;
@@ -208,7 +239,7 @@ hr {
   padding: 30px 0 10px;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
   font-size: 5em;
   font-weight: 700;
   line-height: normal;
@@ -226,4 +257,39 @@ hr {
   font-weight: 400;
   letter-spacing: 3px;
   color: rgb(0, 0, 0);
+}
+
+i.fa {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 5px rgb(58, 0, 0);
+  padding: 0.5em 0.6em;
+  color: #794848;
+}
+
+i.fa:hover {
+  color: #000000;
+  box-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+@media screen and (max-width: 1000px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-2 img-2"
+      "img-1 img-1 img-3 img-3"
+      "img-4 img-4 img-5 img-5"
+      "img-6 img-7 img-7 img-7"
+      "img-6 img-8 img-8 img-8";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .image-gallery {
+    grid-template-areas:
+      "img-1 img-1 img-6 img-6"
+      "img-1 img-1 img-6 img-6"
+      "img-8 img-8 img-7 img-7"
+      "img-5 img-5 img-2 img-2"
+      "img-3 img-3 img-3 img-3"
+      "img-4 img-4 img-4 img-4";
+  }
 }
