@@ -65,6 +65,7 @@ div.c-wrapper {
   margin: auto;
 }
 .test {
+  height: 1500px;
   padding: 20px;
   /*max-width: 1700px;
   margin: auto;*/
@@ -94,7 +95,6 @@ div.c-wrapper {
 .carousel .carousel-item img,
 .carousel .carousel-control {
   border-radius: 10px;
-  box-shadow: 0px 0px 5px rgb(88, 88, 88);
 }
 
 /*
